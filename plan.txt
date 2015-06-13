@@ -1,0 +1,45 @@
+What is a player?
+
+-- Both local and server attributes --
+node index
+location
+rotation
+whether or not engine is firing
+
+
+-- Local specific attributes --
+hitbox
+node index -> team 
+node index -> ship type
+node index -> paired index (for big ships)
+acceleration, velocity, etc.
+
+What is another player?
+-- Both local and server attributes --
+node index
+location
+rotation
+whether or not engine is firing
+
+-- Local specific attributes --
+hitbox
+node index -> team 
+node index -> ship type
+node index -> paired index (for big ships)
+
+What is a bullet?
+
+-- Both local and server attributes --
+node index
+location
+rotation
+
+-- local specific attributes --
+hitbox
+node index -> team
+node index -> ship type -> bullet type
+
+Should there be a central entity framework? There will be multiple weapons (bombs, missiles, etc.) perhaps eventually, so I don't think so. There should be ships, bullets, etc. with their own draw functions. These entities should be shared between all nodes, while drawn on individual nodes. 
+
+CX means core X, which is used for the server (it's the "core" of the information)
+X means local X.

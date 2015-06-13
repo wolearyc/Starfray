@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0AA7FD19835FD7005A800C /* packets.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A0AA7FB198358B2005A800C /* packets.c */; };
+		1A0AA7FF19835FDC005A800C /* entity_manager.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A18844519671B9C006B0954 /* entity_manager.c */; };
+		1A0AA8071984A1A6005A800C /* entity.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A18844619671B9C006B0954 /* entity.c */; };
+		1A0AA8081984A2AF005A800C /* camera.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A18844319671B9C006B0954 /* camera.c */; };
+		1A158B751B22C19B00E5FCB5 /* player.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A18844B19671B9C006B0954 /* player.c */; };
+		1A158B771B22C5CF00E5FCB5 /* resource_pack.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A18844919671B9C006B0954 /* resource_pack.c */; };
+		1A18840B19671A34006B0954 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A18840919671A34006B0954 /* InfoPlist.strings */; };
+		1A18841919671A35006B0954 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A18841819671A35006B0954 /* Images.xcassets */; };
+		1A18845719671CEE006B0954 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A18840019671A34006B0954 /* Cocoa.framework */; };
+		1A18845919671CF5006B0954 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A18845819671CF5006B0954 /* Quartz.framework */; };
+		1A18845B19671CFE006B0954 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A18845A19671CFE006B0954 /* IOKit.framework */; };
+		1A18845D19671D07006B0954 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A18845C19671D07006B0954 /* OpenGL.framework */; };
+		1A18845F19671D21006B0954 /* libwic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A18845E19671D21006B0954 /* libwic.a */; };
+		1A2EEBA01972185500FCFC40 /* large_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB921972182700FCFC40 /* large_blue.png */; };
+		1A2EEBA11972185500FCFC40 /* large_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB931972182700FCFC40 /* large_red.png */; };
+		1A2EEBA21972185500FCFC40 /* medium_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB941972182700FCFC40 /* medium_blue.png */; };
+		1A2EEBA31972185500FCFC40 /* medium_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB951972182700FCFC40 /* medium_red.png */; };
+		1A2EEBA41972185500FCFC40 /* small_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB961972182700FCFC40 /* small_blue.png */; };
+		1A2EEBA51972185500FCFC40 /* small_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB971972182700FCFC40 /* small_red.png */; };
+		1A2EEBA71972186500FCFC40 /* large_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB991972182700FCFC40 /* large_blue.png */; };
+		1A2EEBA81972186500FCFC40 /* large_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB9A1972182700FCFC40 /* large_red.png */; };
+		1A2EEBA91972186500FCFC40 /* medium_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB9B1972182700FCFC40 /* medium_blue.png */; };
+		1A2EEBAA1972186500FCFC40 /* medium_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB9C1972182700FCFC40 /* medium_red.png */; };
+		1A2EEBAB1972186500FCFC40 /* small_blue.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB9D1972182700FCFC40 /* small_blue.png */; };
+		1A2EEBAC1972186500FCFC40 /* small_red.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A2EEB9E1972182700FCFC40 /* small_red.png */; };
+		1A377040197B69DD00803147 /* server_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A37703C197B697C00803147 /* server_main.c */; };
+		1A534EF11A44FFED00F38634 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A0AA7F919835444005A800C /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A2EEB9F1972184700FCFC40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = bullet;
+			dstSubfolderSpec = 7;
+			files = (
+				1A2EEBA01972185500FCFC40 /* large_blue.png in CopyFiles */,
+				1A2EEBA11972185500FCFC40 /* large_red.png in CopyFiles */,
+				1A2EEBA21972185500FCFC40 /* medium_blue.png in CopyFiles */,
+				1A2EEBA31972185500FCFC40 /* medium_red.png in CopyFiles */,
+				1A2EEBA41972185500FCFC40 /* small_blue.png in CopyFiles */,
+				1A2EEBA51972185500FCFC40 /* small_red.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2EEBA61972185A00FCFC40 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ship;
+			dstSubfolderSpec = 7;
+			files = (
+				1A2EEBA71972186500FCFC40 /* large_blue.png in CopyFiles */,
+				1A2EEBA81972186500FCFC40 /* large_red.png in CopyFiles */,
+				1A2EEBA91972186500FCFC40 /* medium_blue.png in CopyFiles */,
+				1A2EEBAA1972186500FCFC40 /* medium_red.png in CopyFiles */,
+				1A2EEBAB1972186500FCFC40 /* small_blue.png in CopyFiles */,
+				1A2EEBAC1972186500FCFC40 /* small_red.png in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5FC39D1967488A007E34E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0AA7F919835444005A800C /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = src/main.c; sourceTree = "<group>"; };
+		1A0AA7FB198358B2005A800C /* packets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = packets.c; path = src/packets.c; sourceTree = "<group>"; };
+		1A1883FD19671A34006B0954 /* Starfray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Starfray.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A18840019671A34006B0954 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1A18840319671A34006B0954 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1A18840419671A34006B0954 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A18840519671A34006B0954 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A18840819671A34006B0954 /* Starfray-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Starfray-Info.plist"; sourceTree = "<group>"; };
+		1A18840A19671A34006B0954 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A18841819671A35006B0954 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A18841F19671A35006B0954 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1A18843519671B87006B0954 /* background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = background.h; path = include/background.h; sourceTree = "<group>"; };
+		1A18843619671B87006B0954 /* bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bullet.h; path = include/bullet.h; sourceTree = "<group>"; };
+		1A18843719671B87006B0954 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = include/camera.h; sourceTree = "<group>"; };
+		1A18843919671B87006B0954 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constants.h; path = include/constants.h; sourceTree = "<group>"; };
+		1A18843A19671B87006B0954 /* entity_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entity_manager.h; path = include/entity_manager.h; sourceTree = "<group>"; };
+		1A18843B19671B87006B0954 /* entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = entity.h; path = include/entity.h; sourceTree = "<group>"; };
+		1A18843D19671B87006B0954 /* resource_pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = resource_pack.h; path = include/resource_pack.h; sourceTree = "<group>"; };
+		1A18843F19671B87006B0954 /* player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = player.h; path = include/player.h; sourceTree = "<group>"; };
+		1A18844119671B9C006B0954 /* background.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = background.c; path = src/background.c; sourceTree = "<group>"; };
+		1A18844219671B9C006B0954 /* bullet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bullet.c; path = src/bullet.c; sourceTree = "<group>"; };
+		1A18844319671B9C006B0954 /* camera.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = camera.c; path = src/camera.c; sourceTree = "<group>"; };
+		1A18844519671B9C006B0954 /* entity_manager.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = entity_manager.c; path = src/entity_manager.c; sourceTree = "<group>"; };
+		1A18844619671B9C006B0954 /* entity.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = entity.c; path = src/entity.c; sourceTree = "<group>"; };
+		1A18844919671B9C006B0954 /* resource_pack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = resource_pack.c; path = src/resource_pack.c; sourceTree = "<group>"; };
+		1A18844B19671B9C006B0954 /* player.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = player.c; path = src/player.c; sourceTree = "<group>"; };
+		1A18845819671CF5006B0954 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		1A18845A19671CFE006B0954 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		1A18845C19671D07006B0954 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1A18845E19671D21006B0954 /* libwic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwic.a; path = ../wic/bin/debug/libwic.a; sourceTree = "<group>"; };
+		1A1884891967482C006B0954 /* Starfray copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Starfray copy-Info.plist"; path = "/Volumes/Downloads/Starfray/Starfray copy-Info.plist"; sourceTree = "<absolute>"; };
+		1A2EEB921972182700FCFC40 /* large_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_blue.png; sourceTree = "<group>"; };
+		1A2EEB931972182700FCFC40 /* large_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_red.png; sourceTree = "<group>"; };
+		1A2EEB941972182700FCFC40 /* medium_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_blue.png; sourceTree = "<group>"; };
+		1A2EEB951972182700FCFC40 /* medium_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_red.png; sourceTree = "<group>"; };
+		1A2EEB961972182700FCFC40 /* small_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_blue.png; sourceTree = "<group>"; };
+		1A2EEB971972182700FCFC40 /* small_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_red.png; sourceTree = "<group>"; };
+		1A2EEB991972182700FCFC40 /* large_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_blue.png; sourceTree = "<group>"; };
+		1A2EEB9A1972182700FCFC40 /* large_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = large_red.png; sourceTree = "<group>"; };
+		1A2EEB9B1972182700FCFC40 /* medium_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_blue.png; sourceTree = "<group>"; };
+		1A2EEB9C1972182700FCFC40 /* medium_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medium_red.png; sourceTree = "<group>"; };
+		1A2EEB9D1972182700FCFC40 /* small_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_blue.png; sourceTree = "<group>"; };
+		1A2EEB9E1972182700FCFC40 /* small_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_red.png; sourceTree = "<group>"; };
+		1A37703C197B697C00803147 /* server_main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server_main.c; sourceTree = "<group>"; };
+		1A5FC39F1967488A007E34E0 /* starfray-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "starfray-server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A945602197B8A01006AF833 /* packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = packets.h; path = include/packets.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A1883FA19671A34006B0954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A18845F19671D21006B0954 /* libwic.a in Frameworks */,
+				1A18845D19671D07006B0954 /* OpenGL.framework in Frameworks */,
+				1A18845B19671CFE006B0954 /* IOKit.framework in Frameworks */,
+				1A18845919671CF5006B0954 /* Quartz.framework in Frameworks */,
+				1A18845719671CEE006B0954 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5FC39C1967488A007E34E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1883F419671A34006B0954 = {
+			isa = PBXGroup;
+			children = (
+				1A0AA7F919835444005A800C /* main.c */,
+				1A377039197B694400803147 /* networking */,
+				1A18843419671B6C006B0954 /* local */,
+				1A18844019671B8E006B0954 /* src */,
+				1A18840619671A34006B0954 /* Starfray */,
+				1A1883FF19671A34006B0954 /* Frameworks */,
+				1A1883FE19671A34006B0954 /* Products */,
+				1A1884891967482C006B0954 /* Starfray copy-Info.plist */,
+			);
+			sourceTree = "<group>";
+		};
+		1A1883FE19671A34006B0954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1883FD19671A34006B0954 /* Starfray.app */,
+				1A5FC39F1967488A007E34E0 /* starfray-server */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A1883FF19671A34006B0954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A18845E19671D21006B0954 /* libwic.a */,
+				1A18845C19671D07006B0954 /* OpenGL.framework */,
+				1A18845A19671CFE006B0954 /* IOKit.framework */,
+				1A18845819671CF5006B0954 /* Quartz.framework */,
+				1A18840019671A34006B0954 /* Cocoa.framework */,
+				1A18841F19671A35006B0954 /* XCTest.framework */,
+				1A18840219671A34006B0954 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A18840219671A34006B0954 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A18840319671A34006B0954 /* AppKit.framework */,
+				1A18840419671A34006B0954 /* CoreData.framework */,
+				1A18840519671A34006B0954 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1A18840619671A34006B0954 /* Starfray */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EEB911972182700FCFC40 /* bullet */,
+				1A2EEB981972182700FCFC40 /* ship */,
+				1A18841819671A35006B0954 /* Images.xcassets */,
+				1A18840719671A34006B0954 /* Supporting Files */,
+			);
+			path = Starfray;
+			sourceTree = "<group>";
+		};
+		1A18840719671A34006B0954 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A18840819671A34006B0954 /* Starfray-Info.plist */,
+				1A18840919671A34006B0954 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A18843419671B6C006B0954 /* local */ = {
+			isa = PBXGroup;
+			children = (
+				1A18843519671B87006B0954 /* background.h */,
+				1A18843619671B87006B0954 /* bullet.h */,
+				1A18843719671B87006B0954 /* camera.h */,
+				1A18843919671B87006B0954 /* constants.h */,
+				1A18843A19671B87006B0954 /* entity_manager.h */,
+				1A18843B19671B87006B0954 /* entity.h */,
+				1A18843D19671B87006B0954 /* resource_pack.h */,
+				1A18843F19671B87006B0954 /* player.h */,
+			);
+			name = local;
+			sourceTree = "<group>";
+		};
+		1A18844019671B8E006B0954 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1A0AA7FB198358B2005A800C /* packets.c */,
+				1A18844119671B9C006B0954 /* background.c */,
+				1A18844219671B9C006B0954 /* bullet.c */,
+				1A18844319671B9C006B0954 /* camera.c */,
+				1A18844519671B9C006B0954 /* entity_manager.c */,
+				1A18844619671B9C006B0954 /* entity.c */,
+				1A18844919671B9C006B0954 /* resource_pack.c */,
+				1A18844B19671B9C006B0954 /* player.c */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		1A2EEB911972182700FCFC40 /* bullet */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EEB921972182700FCFC40 /* large_blue.png */,
+				1A2EEB931972182700FCFC40 /* large_red.png */,
+				1A2EEB941972182700FCFC40 /* medium_blue.png */,
+				1A2EEB951972182700FCFC40 /* medium_red.png */,
+				1A2EEB961972182700FCFC40 /* small_blue.png */,
+				1A2EEB971972182700FCFC40 /* small_red.png */,
+			);
+			name = bullet;
+			path = ../resources/bullet;
+			sourceTree = "<group>";
+		};
+		1A2EEB981972182700FCFC40 /* ship */ = {
+			isa = PBXGroup;
+			children = (
+				1A2EEB991972182700FCFC40 /* large_blue.png */,
+				1A2EEB9A1972182700FCFC40 /* large_red.png */,
+				1A2EEB9B1972182700FCFC40 /* medium_blue.png */,
+				1A2EEB9C1972182700FCFC40 /* medium_red.png */,
+				1A2EEB9D1972182700FCFC40 /* small_blue.png */,
+				1A2EEB9E1972182700FCFC40 /* small_red.png */,
+			);
+			name = ship;
+			path = ../resources/ship;
+			sourceTree = "<group>";
+		};
+		1A377039197B694400803147 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				1A37703C197B697C00803147 /* server_main.c */,
+				1A945602197B8A01006AF833 /* packets.h */,
+			);
+			name = networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1883FC19671A34006B0954 /* Starfray */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A18842E19671A35006B0954 /* Build configuration list for PBXNativeTarget "Starfray" */;
+			buildPhases = (
+				1A1883F919671A34006B0954 /* Sources */,
+				1A1883FA19671A34006B0954 /* Frameworks */,
+				1A2EEB9F1972184700FCFC40 /* CopyFiles */,
+				1A2EEBA61972185A00FCFC40 /* CopyFiles */,
+				1A1883FB19671A34006B0954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starfray;
+			productName = Starfray;
+			productReference = 1A1883FD19671A34006B0954 /* Starfray.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A5FC39E1967488A007E34E0 /* starfray-server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5FC3A51967488A007E34E0 /* Build configuration list for PBXNativeTarget "starfray-server" */;
+			buildPhases = (
+				1A5FC39B1967488A007E34E0 /* Sources */,
+				1A5FC39C1967488A007E34E0 /* Frameworks */,
+				1A5FC39D1967488A007E34E0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "starfray-server";
+			productName = "StarFray Server";
+			productReference = 1A5FC39F1967488A007E34E0 /* starfray-server */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A1883F519671A34006B0954 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Team PWR Productions";
+			};
+			buildConfigurationList = 1A1883F819671A34006B0954 /* Build configuration list for PBXProject "Starfray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A1883F419671A34006B0954;
+			productRefGroup = 1A1883FE19671A34006B0954 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1883FC19671A34006B0954 /* Starfray */,
+				1A5FC39E1967488A007E34E0 /* starfray-server */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A1883FB19671A34006B0954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A18840B19671A34006B0954 /* InfoPlist.strings in Resources */,
+				1A18841919671A35006B0954 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A1883F919671A34006B0954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A534EF11A44FFED00F38634 /* main.c in Sources */,
+				1A158B771B22C5CF00E5FCB5 /* resource_pack.c in Sources */,
+				1A158B751B22C19B00E5FCB5 /* player.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A5FC39B1967488A007E34E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0AA8081984A2AF005A800C /* camera.c in Sources */,
+				1A0AA7FF19835FDC005A800C /* entity_manager.c in Sources */,
+				1A377040197B69DD00803147 /* server_main.c in Sources */,
+				1A0AA8071984A1A6005A800C /* entity.c in Sources */,
+				1A0AA7FD19835FD7005A800C /* packets.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A18840919671A34006B0954 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A18840A19671A34006B0954 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A18842C19671A35006B0954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../wic/include,
+					../wic/deps/include,
+				);
+				LIBRARY_SEARCH_PATHS = ../wic/bin/debug;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1A18842D19671A35006B0954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../wic/include,
+					../wic/deps/include,
+				);
+				LIBRARY_SEARCH_PATHS = ../wic/bin/debug;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1A18842F19671A35006B0954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "Starfray/Starfray-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Downloads/wic/bin/debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A18843019671A35006B0954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				INFOPLIST_FILE = "Starfray/Starfray-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Volumes/Downloads/wic/bin/debug,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A5FC3A61967488A007E34E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = /Volumes/Downloads/wic/bin/debug;
+				OTHER_LDFLAGS = (
+					"-lwic",
+					"-framework",
+					Cocoa,
+					"-framework",
+					Quartz,
+					"-framework",
+					IOKit,
+					"-framework",
+					OpenGL,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A5FC3A71967488A007E34E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = /Volumes/Downloads/wic/bin/release;
+				OTHER_LDFLAGS = (
+					"-lwic",
+					"-framework",
+					Cocoa,
+					"-framework",
+					Quartz,
+					"-framework",
+					IOKit,
+					"-framework",
+					OpenGL,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A1883F819671A34006B0954 /* Build configuration list for PBXProject "Starfray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A18842C19671A35006B0954 /* Debug */,
+				1A18842D19671A35006B0954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A18842E19671A35006B0954 /* Build configuration list for PBXNativeTarget "Starfray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A18842F19671A35006B0954 /* Debug */,
+				1A18843019671A35006B0954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A5FC3A51967488A007E34E0 /* Build configuration list for PBXNativeTarget "starfray-server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A5FC3A61967488A007E34E0 /* Debug */,
+				1A5FC3A71967488A007E34E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A1883F519671A34006B0954 /* Project object */;
+}

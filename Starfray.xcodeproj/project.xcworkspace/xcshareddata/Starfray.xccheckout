@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2A86C9DD-9915-4D1E-B963-EBA23D33D257</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>987AA8E48D6783D7408373C4C2961EF6E164F264</key>
+		<string>https://www.github.com/wolearyc/wic</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>987AA8E48D6783D7408373C4C2961EF6E164F264</key>
+		<string>wic/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://www.github.com/wolearyc/wic</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>987AA8E48D6783D7408373C4C2961EF6E164F264</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>987AA8E48D6783D7408373C4C2961EF6E164F264</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wic</string>
+		</dict>
+	</array>
+</dict>
+</plist>

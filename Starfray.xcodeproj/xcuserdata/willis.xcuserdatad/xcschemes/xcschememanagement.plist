@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Starfray.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>starfray-server.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1A1883FC19671A34006B0954</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A18841D19671A35006B0954</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A188463196744BE006B0954</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A18846F1967482C006B0954</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A5FC39E1967488A007E34E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
